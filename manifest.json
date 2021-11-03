@@ -1,0 +1,30 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+
+"manifest_version": 2,
+
+ "name": "Icon Search",
+
+"description": "Offline search for Font Awesome Icon" , 
+  
+"version": "0.2" , 
+
+"content_security_policy":"script-src 'self' https://yandex.st https://code.jquery.com https://maxcdn.bootstrapcdn.com https://fonts.googleapis.com; object-src 'self'",
+
+"browser_action": {
+
+"default_title" : "Font Awesome Icon Search",     
+
+"default_popup": "popup.html"
+
+},
+
+"icons": { "16": "images/chromeicon.png",
+           "48": "images/chromeicon.png",
+          "128": "images/chromeicon.png" 
+
+
+  }
+
+}

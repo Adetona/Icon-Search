@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>	
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400">
+		<link rel="stylesheet" href="https://yandex.st/highlightjs/7.3/styles/default.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script src="https://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+		<style type="text/css">
+			body{
+				background-color: #F1F1F1; 
+			}
+			.container-style{
+				width: 600px;
+				height: 400px;
+			}
+			#form-row{
+				margin-top: 30px; 
+			}
+
+			#col-style{
+				margin-left: 50px;
+			}
+
+			#form-style{
+				width: 300px;
+				height: 50px;
+				border: 2px solid white; 
+				font-size: 15px;
+				color: #000000;
+			}
+
+			#search{
+				width: 500px;
+				height: 50px;
+				border: 2px solid white; 
+				font-size: 15px;
+				color: #000000;
+			}
+
+			 input:focus { 
+    			 outline:none; 
+             }
+             ::placeholder{
+             	color: #41BE59;
+             	font-weight: bold; 
+             }
+		</style>
+</head>
+<body>
+	<div class="container-fluid container-style">
+		<div class="row" id="form-row">
+		  <div  id="col-style">
+				
+				 <input type="text" placeholder="Icon Search... (eg: user)" id="search" autocomplete="off" autofocus> 
+
+					<select name="release" id="release" class="release" style=" visibility: hidden; width:1px" >
+						<option value="">All Versions</option>
+					</select>
+
+					<select name="catagory" id="catagory" class="catagory" style=" visibility: hidden; width: 1px">
+						<option value="">All Categories</option>
+					</select>
+			
+		 </div>	
+		</div>
+
+		<div class="row" style="margin-top: 50px">
+			<div class="details">
+				<div class="details-wrapper">
+					<div class="demo"></div>
+					<div class="code">
+						<div class="name"></div>
+						<!--div class="info"></div-->
+						<div class="copy" style="margin-right: 30px"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-bottom: 50px;">
+			
+		<div class="list">
+			<ul class="icons"></ul>
+			<div class="clearfix"></div>
+		</div>
+
+		</div>
+	</div>
+
+		<script src="js/icons.js"></script>
+		<script src="js/aliases.js"></script>
+		<script src="js/script.js"></script>
+</body>
+</html>
